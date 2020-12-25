@@ -1,0 +1,60 @@
+nothing much you just have to copy 4 videos on the same directory as all the files and then name the first video as video.mp4, second video - video2.mp4, third video - video3.mp4, four - video4.mp4
+you can also change path to videos on the following files - 
+1) main.py ( for the first file ) 
+2) main2.py ( for the second file )
+3) main3.py ( for the third file )
+4 main4.py ( for the four file )
+
+for the model file you should see the yoloh5.txt in the repository which has instruction of downloading model file or if your too lazy to lookup into the file you can also download from the link below
+
+link - https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi9x8XduOntAhVcyTgGHSJpAvAQFjAAegQIBBAC&url=https%3A%2F%2Fgithub.com%2FOlafenwaMoses%2FImageAI%2Freleases%2Fdownload%2F1.0%2Fyolo.h5&usg=AOvVaw0J6cPR1x27wCKXmrin_Hwn
+
+copy this whole link and paste in the browser and it would directly download the file of yolo.h5  ( then you can copy yolo.h5  to the repository folder)
+
+
+! ! ! ! ! ! ! ! ! ! THE THINGS WRITTEN BELOW THIS LINE ARE REALLY , REALLY IMPORTANT MAKE SURE YOU READ CAREFULLY ! ! ! ! ! ! ! ! ! !
+
+# This is about how you can actually run you program after you have placed your videos and your model into the repository directory
+
+
+
+
+
+
+
+
+
+
+
+
+IMPORTANT MESSAGE - YOU SHOULD EDIT THE "autoClicker.py" FILE TO MODIFY THE PARAMETER ON LINE NO. 9 THAT SAYS "pyautogui.moveTo()" CHANGE THOSE PARAMENTERS
+SO THAT AUTOCLICKER CLICKS ONLY WHERE CLICK ME BUTTON IS ON TKINTER GUI THOSE PARAMETERS REPRESENTS X AND Y CORDINATES ON YOUR SCREEN AND THAT IS THE CORDINATE WHERE AUTOCLICKER CLICKS AFTER EVERY 1 SECOND
+
+
+
+
+
+
+
+
+
+
+first run all the main files including -
+
+1) main.py ( python main.py )
+2) main2.py ( python main2.py )
+3) main3.py ( python main3.py )
+4) main4.py ( python main4.py )
+
+then run the log combine file including - 
+
+1) logCombine.py ( python logCombine.py )
+
+and then finally run autoclicker file including - 
+
+1) autoClicker.py ( python autoClicker.py )
+
+
+!!!!! I Suggest using different terminals for every single program file . at the end you should have 6 terminal open when running the full software one for every single file above !!!!!
+
+Thank you everyone hope you have a great experience 
