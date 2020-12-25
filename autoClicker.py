@@ -2,7 +2,8 @@ import pyautogui
 import time
 
 # !!!!! ATTENTION !!!!!
-# you have to make moveTo according to your screen reader
+
+# you have to edit pyautogui.moveTo(50,160) file according to your screen
 
 time.sleep(10)
 
