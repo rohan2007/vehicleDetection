@@ -16,13 +16,10 @@ label2.pack()
 label3.pack()
 label4.pack()
 
-
 lane1 = 0
 lane2 = 0
 lane3 = 0
 lane4 = 1
-
-
 
 def something():
 
@@ -43,14 +40,14 @@ def something():
         global lane2
 
         if content2 > content3 and content2 > content4:
-                label1["bg"] = "red"
-                label2["bg"] = "green"
-                label3["bg"] = "red"
-                label4["bg"] = "red"
-                lane2 += 1
+            label1["bg"] = "red"
+            label2["bg"] = "green"
+            label3["bg"] = "red"
+            label4["bg"] = "red"
+            lane2 += 1
 
-                print("lane 2: ")
-                print(lane2)
+            print("lane 2: ")
+            print(lane2)
 
         global lane3
 
@@ -145,53 +142,53 @@ def something():
         global lane4
 
         if content4 > content1 and content4 > content2:
-                label1["bg"] = "red"
-                label2["bg"] = "red"
-                label3["bg"] = "red"
-                label4["bg"] = "green"
+            label1["bg"] = "red"
+            label2["bg"] = "red"
+            label3["bg"] = "red"
+            label4["bg"] = "green"
 
-                lane4 += 1
+            lane4 += 1
 
-                print("lane 4: ")
-                print(lane4)
+            print("lane 4: ")
+            print(lane4)
+
     def changing4():
         global lane1
 
         if content1 > content2 and content1 > content3:
-                label1["bg"] = "green"
-                label2["bg"] = "red"
-                label3["bg"] = "red"
-                label4["bg"] = "red"
-                lane1 += 1
+            label1["bg"] = "green"
+            label2["bg"] = "red"
+            label3["bg"] = "red"
+            label4["bg"] = "red"
+            lane1 += 1
 
-                print("lane 1: ")
-                print(lane1)
+            print("lane 1: ")
+            print(lane1)
 
         global lane2
 
         if content2 > content1 and content2 > content3:
-                label1["bg"] = "red"
-                label2["bg"] = "green"
-                label3["bg"] = "red"
-                label4["bg"] = "red"
-                lane2 += 1
+            label1["bg"] = "red"
+            label2["bg"] = "green"
+            label3["bg"] = "red"
+            label4["bg"] = "red"
+            lane2 += 1
 
-                print("lane 2: ")
-                print(lane2)
+            print("lane 2: ")
+            print(lane2)
 
         global lane3
 
-        if content3 > content1 and content3 > content2 :
+        if content3 > content1 and content3 > content2:
+            label1["bg"] = "red"
+            label2["bg"] = "red"
+            label3["bg"] = "green"
+            label4["bg"] = "red"
 
-                label1["bg"] = "red"
-                label2["bg"] = "red"
-                label3["bg"] = "green"
-                label4["bg"] = "red"
+            lane3 += 1
 
-                lane3 += 1
-
-                print("lane 3: ")
-                print(lane3)
+            print("lane 3: ")
+            print(lane3)
 
     def change1():
         global lane1
@@ -214,6 +211,7 @@ def something():
 
                 print("lane 1: ")
                 print(lane1)
+
     def change2():
         global lane2
 
@@ -258,6 +256,7 @@ def something():
 
                 print("lane 3: ")
                 print(lane3)
+
     def change4():
         global lane4
 
@@ -286,13 +285,8 @@ def something():
     change3()
     change4()
 
-
-
-
-
-
 button = Button(root, text="Click me!", command=something)
 button.pack()
 
-
 root.mainloop()
+
