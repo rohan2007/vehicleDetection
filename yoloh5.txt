@@ -1,0 +1,7 @@
+Hey the file is too large to be here ( almost 200 mb so it will be good if you download from the link below )
+
+link - https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi9x8XduOntAhVcyTgGHSJpAvAQFjAAegQIBBAC&url=https%3A%2F%2Fgithub.com%2FOlafenwaMoses%2FImageAI%2Freleases%2Fdownload%2F1.0%2Fyolo.h5&usg=AOvVaw0J6cPR1x27wCKXmrin_Hwn
+
+contact me if the link doesn't works 9278781782
+
+and to make it work properly you should definetly place the downloaded file in the main directory as all the main.py files *do not copy the file to any other folder nor do you have to change path on main.py or any other files if you download the model file in the same directory
