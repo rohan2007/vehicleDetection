@@ -39,6 +39,159 @@ def something():
         content = f_obj.read()
         content4 = int(content)
 
+    def changing1():
+        global lane2
+
+        if content2 > content3 and content2 > content4:
+                label1["bg"] = "red"
+                label2["bg"] = "green"
+                label3["bg"] = "red"
+                label4["bg"] = "red"
+                lane2 += 1
+
+                print("lane 2: ")
+                print(lane2)
+
+        global lane3
+
+        if content3 > content2 and content3 > content4:
+            label1["bg"] = "red"
+            label2["bg"] = "red"
+            label3["bg"] = "green"
+            label4["bg"] = "red"
+
+            lane3 += 1
+
+            print("lane 3: ")
+            print(lane3)
+
+        global lane4
+
+        if content4 > content2 and content4 > content3:
+            label1["bg"] = "red"
+            label2["bg"] = "red"
+            label3["bg"] = "red"
+            label4["bg"] = "green"
+
+            lane4 += 1
+
+            print("lane 4: ")
+            print(lane4)
+
+    def changing2():
+        global lane1
+
+        if content1 > content3 and content1 > content4:
+            label1["bg"] = "green"
+            label2["bg"] = "red"
+            label3["bg"] = "red"
+            label4["bg"] = "red"
+            lane1 += 1
+
+            print("lane 1: ")
+            print(lane1)
+
+        global lane3
+
+        if content3 > content1 and content3 > content4:
+            label1["bg"] = "red"
+            label2["bg"] = "red"
+            label3["bg"] = "green"
+            label4["bg"] = "red"
+
+            lane3 += 1
+
+            print("lane 3: ")
+            print(lane3)
+
+        global lane4
+
+        if content4 > content1 and content4 > content3:
+            label1["bg"] = "red"
+            label2["bg"] = "red"
+            label3["bg"] = "red"
+            label4["bg"] = "green"
+
+            lane4 += 1
+
+            print("lane 4: ")
+            print(lane4)
+
+    def changing3():
+        global lane1
+
+        if content1 > content2 and content1 > content4:
+            label1["bg"] = "green"
+            label2["bg"] = "red"
+            label3["bg"] = "red"
+            label4["bg"] = "red"
+            lane1 += 1
+
+            print("lane 1: ")
+            print(lane1)
+
+        global lane2
+
+        if content2 > content1 and content2 > content4:
+            label1["bg"] = "red"
+            label2["bg"] = "green"
+            label3["bg"] = "red"
+            label4["bg"] = "red"
+            lane2 += 1
+
+            print("lane 2: ")
+            print(lane2)
+
+        global lane4
+
+        if content4 > content1 and content4 > content2:
+                label1["bg"] = "red"
+                label2["bg"] = "red"
+                label3["bg"] = "red"
+                label4["bg"] = "green"
+
+                lane4 += 1
+
+                print("lane 4: ")
+                print(lane4)
+    def changing4():
+        global lane1
+
+        if content1 > content2 and content1 > content3:
+                label1["bg"] = "green"
+                label2["bg"] = "red"
+                label3["bg"] = "red"
+                label4["bg"] = "red"
+                lane1 += 1
+
+                print("lane 1: ")
+                print(lane1)
+
+        global lane2
+
+        if content2 > content1 and content2 > content3:
+                label1["bg"] = "red"
+                label2["bg"] = "green"
+                label3["bg"] = "red"
+                label4["bg"] = "red"
+                lane2 += 1
+
+                print("lane 2: ")
+                print(lane2)
+
+        global lane3
+
+        if content3 > content1 and content3 > content2 :
+
+                label1["bg"] = "red"
+                label2["bg"] = "red"
+                label3["bg"] = "green"
+                label4["bg"] = "red"
+
+                lane3 += 1
+
+                print("lane 3: ")
+                print(lane3)
 
     def change1():
         global lane1
@@ -49,11 +202,9 @@ def something():
                     lane1 = 0
                     something()
                 else:
-                    change2()
-                    change3()
-                    change4()
+                    label1["bg"] = "red"
+                    changing1()
                     lane1 += 1
-                    print(lane1)
             else:
                 label1["bg"] = "green"
                 label2["bg"] = "red"
@@ -61,6 +212,7 @@ def something():
                 label4["bg"] = "red"
                 lane1 += 1
 
+                print("lane 1: ")
                 print(lane1)
     def change2():
         global lane2
@@ -71,15 +223,9 @@ def something():
                     lane2 = 0
                     something()
                 else:
-                    change1()
-                    change3()
-                    change4()
+                    label2["bg"] = "red"
+                    changing2()
                     lane2 += 1
-                    print(lane2)
-            elif lane2 >= 240:
-                lane2 = 0
-                print(lane2)
-                something()
             else:
                 label1["bg"] = "red"
                 label2["bg"] = "green"
@@ -87,6 +233,7 @@ def something():
                 label4["bg"] = "red"
                 lane2 += 1
 
+                print("lane 2: ")
                 print(lane2)
 
     def change3():
@@ -94,15 +241,13 @@ def something():
 
         if content3 > content1 and content3 > content2 and content3 > content4:
             if lane3 >= 120:
-                change1()
-                change2()
-                change4()
-                lane3 += 1
-
-                print(lane2)
-            elif lane3 == 240:
-                lane3 = 0
-                something()
+                if lane3 >= 240:
+                    lane3 = 0
+                    something()
+                else:
+                    label3["bg"] = "red"
+                    changing3()
+                    lane3 += 1
             else:
                 label1["bg"] = "red"
                 label2["bg"] = "red"
@@ -111,21 +256,20 @@ def something():
 
                 lane3 += 1
 
+                print("lane 3: ")
                 print(lane3)
     def change4():
         global lane4
 
         if content4 > content1 and content4 > content2 and content4 > content3:
             if lane4 >= 120:
-                change1()
-                change2()
-                change3()
-                lane4 += 1
-
-                print(lane4)
-            elif lane4 == 240:
-                lane4 = 0
-                something()
+                if lane4 >= 240:
+                    lane4 = 0
+                    something()
+                else:
+                    label4["bg"] = "red"
+                    changing4()
+                    lane4 += 1
             else:
                 label1["bg"] = "red"
                 label2["bg"] = "red"
@@ -133,6 +277,8 @@ def something():
                 label4["bg"] = "green"
 
                 lane4 += 1
+
+                print("lane 4: ")
                 print(lane4)
 
     change1()
