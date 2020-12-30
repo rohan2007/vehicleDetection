@@ -36,7 +36,7 @@ def forFrame(frame_number, output_array, output_count, detected_frame):
     sum = 0
     for key, value in output_count.items():
         sum = sum + value
-    with open("log3.txt", "w") as f_obj:
+    with open("log4.txt", "w") as f_obj:
         f_obj.write(str(sum))
 
 video_detector = VideoObjectDetection()
@@ -44,8 +44,8 @@ video_detector.setModelTypeAsYOLOv3()
 video_detector.setModelPath(os.path.join(execution_path, "yolo.h5"))
 video_detector.loadModel()
 
-video_detector.detectObjectsFromVideo(input_file_path="video3.mp4", frames_per_second=20,
+video_detector.detectObjectsFromVideo(input_file_path="video4.mp4", frames_per_second=20,
                                           per_frame_function=forFrame, minimum_percentage_probability=70,
-                                          output_file_path="analyzed_video3.mp4", return_detected_frame=True)
+                                          output_file_path="analyzed_video4.mp4", return_detected_frame=True)
 
 
