@@ -13,30 +13,23 @@ frame is detected, the function will be executed with the following values parse
 
 from imageai.Detection import VideoObjectDetection
 import os
-import cv2
-from PIL import Image as im
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
+
 
 
 execution_path = os.getcwd()
 
-def forFrame(frame_number, output_array, output_count, detected_frame):
+def forFrame(frame_number, output_array, output_count):
     print("FOR FRAME ", frame_number)
     print("Output for each object : ", output_array)
     print("Output count for unique objects : ", output_count)
     print("------------END OF A FRAME --------------")
 
-    data = im.fromarray(detected_frame)
-    imgplot = plt.imshow(data)
-    plt.show(block=False)
-    plt.pause(3)
-    plt.close()
+
 
     sum = 0
     for key, value in output_count.items():
         sum = sum + value
-    with open("log4.txt", "w") as f_obj:
+    with open("log3.txt", "w") as f_obj:
         f_obj.write(str(sum))
 
 video_detector = VideoObjectDetection()
@@ -44,8 +37,8 @@ video_detector.setModelTypeAsYOLOv3()
 video_detector.setModelPath(os.path.join(execution_path, "yolo.h5"))
 video_detector.loadModel()
 
-video_detector.detectObjectsFromVideo(input_file_path="video4.mp4", frames_per_second=20,
+video_detector.detectObjectsFromVideo(input_file_path="video3.mp4", frames_per_second=20,
                                           per_frame_function=forFrame, minimum_percentage_probability=70,
-                                          output_file_path="analyzed_video4.mp4", return_detected_frame=True)
+                                          output_file_path="analyzed_video3.mp4")
 
 
